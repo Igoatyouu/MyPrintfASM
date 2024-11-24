@@ -60,13 +60,13 @@ make re     # Rebuilds everything
 ```c
 #include <stdarg.h>
 
-int my_printf(const char *format, ...); // Function prototype
+int _my_printf(const char *format, ...); // Function prototype
 
 int main(void)
 {
-    my_printf("Hello %s!\n", "world");
-    my_printf("Number: %d\n", 42);
-    my_printf("Float with 2 decimals: %f\n", 3.14159, 2);
+    _my_printf("Hello %s!\n", "world");
+    _my_printf("Number: %d\n", 42);
+    _my_printf("Float with 2 decimals: %f\n", 3.14159, 2);
     return 0;
 }
 ```
